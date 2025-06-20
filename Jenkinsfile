@@ -11,7 +11,7 @@ pipeline {
     stage('Checkout') {
       steps {
           withCredentials([gitUsernamePassword(credentialsId: 'my-credentials-id', gitToolName: 'git-tool')]) {
-              git 'https://github.com/Maove/web-iac.git#main'
+              git 'https://github.com/Maove/web-iac.git'
           }
       }
     }
